@@ -16,7 +16,7 @@ def get_package(tracking_number = None):
     payload = {"trackingNumber": tracking_number}
     headers = {
         "Content-Type": "application/json; charset=UTF-8",
-        "Authorization": "apik_DFCEgGNp4UlyuqLNrtWskchOc4fwMT"
+        "Authorization": ""
         }
 
 
