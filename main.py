@@ -3,7 +3,6 @@ import json
 import time
 import threading
 import track
-import darknode_bot
 import requests, requests.auth
 from config import CONFIG
 
@@ -15,12 +14,10 @@ class thread(threading.Thread):
  
         # helper function to execute the threads
     def run(self):
-        if self.thread_name == "Darknode":
-            darknode_bot.run()
-        elif self.thread_name == "Tracking":
+        if self.thread_name == "Tracking":
         	track.run()
 
-Bot2 = thread("Darknode", 2)
+Bot2 = thread("Tracking", 2)
 Bot2.start()
 
 
